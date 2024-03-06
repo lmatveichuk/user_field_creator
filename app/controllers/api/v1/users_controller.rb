@@ -42,18 +42,3 @@ module Api
     end
   end
 end
-
-
-=begin
-example of request
-
-curl -X PUT \
-  http://localhost:3000/api/v1/users/1 \
-  -H 'Content-Type: application/json' \
-  -d '{
-    "custom_fields": {
-        "1": {"value": "Test"}
-    }
-}'
-
-=end

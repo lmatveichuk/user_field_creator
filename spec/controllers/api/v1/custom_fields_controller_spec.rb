@@ -18,11 +18,3 @@ RSpec.describe Api::V1::CustomFieldsController, type: :controller do
     end
   end
 end
-
-=begin
-curl request to check controller via postman
-
-curl --location 'http://localhost:3000/api/v1/custom_fields' \
---header 'Content-Type: application/json' \
---data '{"custom_field": {"name": "Нове поле", "field_type": "select", "options": {"choices": ["Test"] }}}'
-=end

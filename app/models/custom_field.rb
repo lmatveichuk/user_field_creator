@@ -24,8 +24,6 @@ class CustomField < ApplicationRecord
     if choices.blank? || !choices.is_a?(Array) || choices.empty?
       errors.add(:options, "must include at least one choice for select or multiselect fields")
     end
-  rescue JSON::ParserError
-    errors.add(:options, "is not a valid JSON format")
   end
 
   def options_must_be_a_hash
